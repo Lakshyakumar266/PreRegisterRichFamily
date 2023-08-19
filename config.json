@@ -1,0 +1,7 @@
+{
+    "params": {
+        "PAYTM_HOST": "https://securegw-stage.paytm.in",
+        "PAYTM_MID": "",
+        "SECRET_KEY": "Verry Secret."
+    }
+}

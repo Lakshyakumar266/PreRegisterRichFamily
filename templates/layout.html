@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-register :RichFamily</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='icons/icon.png') }}"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <!-- PAYTM INTIGRATION -->
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"
+    />
+  </head>
+  <body class="bg-[#892cdc]">
+    <div class="absolute top-0 z-[10] w-[100%]">
+      <div
+        class="flex text-white font-[roboto] items-center p-3 rounded-b-[1rem] backdrop-blur-sm bg-[#142850]/95 drop-shadow-lg"
+      >
+        <div class="mains flex items-center mr-auto">
+          <a
+            href="/"
+            class="title font-bold text-[23px] py-[4px] px-[16px] mr-[20px]"
+          >
+            RichFamily
+          </a>
+        </div>
+
+        <div class="extras flex mr-[55px]" id="ExtraPublicity">
+          <div class="onlines px-2 font-bold text-[15px]">
+            <span>5+ </span>Verifying &#128308;
+          </div>
+          <div class="players px-2 font-bold text-[15px]">
+            <span>50+ </span>Registered
+          </div>
+        </div>
+
+        <a
+          href="/register"
+          class="profile bg-[#903749]/50 border border-[#903749] px-2 py-1 items-center flex rounded-full hover:bg-[#903749]/40 ease-in"
+        >
+          <div class="profile-name px-2">
+            <span>Pre-register Now</span>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="p-4 mb-4 text-md text-greay-100 rounded-lg bg-[#cff4fc] dark:bg-gray-800 dark:text-yellow-400 text-center"
+        role="alert"
+      >
+        <span class="font-medium">Releaseing Soon... </span> 
+        <span class="font-medium">Pre-register Now,</span> and
+        <span class="font-medium">GET BONUS OFFERS...</span>
+      </div>
+    </div>
+
+    <div class="mainContainer md:mt-[22vh] mt-[15vh]">
+      {% block body %}{% endblock body %}
+    </div>
+
+    <footer class="Footer flex w-11/12 m-auto">
+      <p class="text-amber-200">
+        <a
+          class="text-blue-400"
+          rel="license"
+          href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+          ><img
+            alt="Creative Commons License"
+            style="border-width: 0"
+            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
+        /></a>
+        This work is licensed under a
+        <a
+          class="text-blue-400"
+          rel="license"
+          href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+          >Creative Commons Attribution- NonCommercial- NoDerivatives 4.0
+          International License</a
+        >.
+        <br />
+        <a
+          href="//codingprogamer.tech"
+          class="text-blue-400 font-semibold text-lg"
+        >
+          CodingProGamer
+        </a>
+        Production &copy; Read
+        <a href="/pollicy" class="text-blue-400 font-semibold text-lg">
+          privacy pollicy
+        </a>
+      </p>
+    </footer>
+  </body>
+  {% block script %}{% endblock script %}
+</html>

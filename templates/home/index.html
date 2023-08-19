@@ -1,0 +1,60 @@
+{% extends 'layout.html' %} {% block body %}
+<div class="block font-[roboto] my-8">
+  <div
+    class="title flex justify-center text-2xl md:text-3xl text-white mx-auto my-4"
+  >
+    How To <span class="text-[#00FFCA] px-1">Play</span>
+  </div>
+  <div class="playbox bg-[#52057B] rounded-2xl mx-16 p-4 drop-shadow-lg">
+    <div class="description text-center text-md text-[#00FFCA]">
+      If you’re new to online Casino Player, we’re here to help you learn. From
+      hand rankings to basic rules and strategies, find everything you need to
+      get started.
+    </div>
+    <div class="player flex items-center justify-center my-4">
+      <button class="button w-[40rem]" id="howToPlay">
+        <div
+          class="image !bg-origin-border !bg-center !bg-no-repeat !bg-cover flex justify-center h-[20rem] items-center rounded-2xl"
+          style="background: url('{{ url_for('static', filename='images/HowToPlay.jpg') }}') "
+        >
+          <i
+            class="bi bi-play-fill text-[6rem] text-[#a356e7] transition-all"
+            id="howToPlayIcon"
+          ></i>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="block font-[roboto] my-8">
+  <div
+    class="title flex justify-center text-2xl md:text-3xl text-white mx-auto my-4"
+  >
+    Pre-register To Get<span class="text-[#00FFCA] px-1">Bonus Offers</span>
+  </div>
+  <div class="playbox bg-[#2d65b2] rounded-2xl mx-16 p-4">
+    <div class="description text-center text-md text-[#00FFCA]">
+      If you want to get bonus offers and get notifyed when we start then
+      <a href="/register">Pre-register Now</a>.
+    </div>
+  </div>
+</div>
+
+<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+  <div>
+    <a
+      title="Pre-Register Now"
+      href="/register"
+      target="_blank"
+      class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12 bg-white"
+    >
+      <img
+        class="object-cover object-center w-full h-full rounded-full"
+        src="{{ url_for('static', filename='images/RegNow.png') }}"
+      />
+    </a>
+  </div>
+</div>
+
+{% endblock body %}
